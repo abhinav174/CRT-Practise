@@ -1,6 +1,8 @@
 public class CRT {
     public static void main(String [] args){
 
+        //Day 1
+
         //Write a string name and retrieve output
         String sample = "SomeString";
         System.out.println(sample);
@@ -35,6 +37,8 @@ public class CRT {
 
         //5.Substring
         System.out.println(name.substring(0,9));
+
+        //Day 2..
 
     }
 }
