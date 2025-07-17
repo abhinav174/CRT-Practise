@@ -69,5 +69,40 @@ public class Day3 {
                 System.out.println("Invalid Input");
 
         }
+
+        //4. Calculator operation using switch case
+        System.out.println("Enter the choice:");
+        System.out.println("1. For Addition");
+        System.out.println("2. FOr Difference");
+        System.out.println("3. For Product");
+        System.out.println("4. For Quotient");
+        int ch = in.nextInt();
+        System.out.println("Enter 2 Numbers");
+        int x = in.nextInt();
+        int y = in.nextInt();
+
+        switch(ch){
+            case 1:
+                System.out.println(x+y);
+                break;
+            case 2:
+                System.out.println(x-y);
+                break;
+            case 3:
+                System.out.println(x*y);
+                break;
+            case 4:
+                if(y!=0){
+                    System.out.println(x/y);
+                }
+                else{
+                    System.out.println("Not possible");
+                }
+                break;
+            default:
+                System.out.println("Invalid Input");
+        }
+
+
     }
 }
