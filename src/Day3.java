@@ -32,5 +32,42 @@ public class Day3 {
         else
             System.out.println("\nLite Tesuko");
 
+        //3. Switch Statement
+        System.out.println("Switch Statement");
+        System.out.println("1. Enter 1 for Monday");
+        System.out.println("2. Enter 2 for Tuesday");
+        System.out.println("3. Enter 3 for Wednesday");
+        System.out.println("4. Enter 4 for Thursday");
+        System.out.println("5. Enter 5 for Friday");
+        System.out.println("6. Enter 6 for Saturday");
+        System.out.println("7. Enter 7 for Sunday");
+        System.out.println("Enter the choice");
+        int choice = in.nextInt();
+        switch(choice){
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid Input");
+
+        }
     }
 }
