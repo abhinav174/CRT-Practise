@@ -9,8 +9,8 @@ class SomeAnimal{
 class SomeDog extends SomeAnimal{
     void bark()
     {
-        SomeAnimal animal = new SomeAnimal();
-        animal.eat();
+//        SomeAnimal animal = new SomeAnimal();
+//        animal.eat();
         System.out.println("Dog is barking");
     }
 }

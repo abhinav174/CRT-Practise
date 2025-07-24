@@ -16,6 +16,9 @@ public class MethodOverloading {
     }
 
     public static void main(String args[]){
-
+        MethodOverloading obj = new MethodOverloading();
+        obj.displayInfo("Abhinav");              // Calls method with String
+        obj.displayInfo(22);                     // Calls method with int
+        obj.displayInfo("Abhinav", 22);
     }
 }
