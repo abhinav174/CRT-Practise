@@ -16,10 +16,17 @@ public class InsertionSort {
     }
     static void printArray(int arr[])
     {
-        for(int i =0;i<arr.length;i++)
-            System.out.println(arr[i]+" ");
-
-        System.out.println();
+        int n = arr.length;
+        System.out.println("Ascending Order: ");
+        for(int i =0;i<n;i++)
+        {
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println("\nDescending  Order: ");
+        for(int i =n-1;i>=0;i--)
+        {
+            System.out.print(arr[i]+" ");
+        }
     }
     public static void main(String[] args) {
         int arr1[] = {12,11,13,5,6};
