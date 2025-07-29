@@ -14,6 +14,7 @@ public class SelectionSort {
         }
         return -1;
     }
+
     public static void main(String[] args) {
         SelectionSort s = new SelectionSort();
 
