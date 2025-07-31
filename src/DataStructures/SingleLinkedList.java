@@ -104,6 +104,26 @@ public class SingleLinkedList {
         }
         System.out.println("Max Element is: "+max);
     }
+    public void findMin()
+    {
+        int min =500;
+        int num =0;
+        Node currNode = head;
+        while(currNode!=null)
+        {
+            try {
+                num = Integer.parseInt(currNode.data);
+            }
+            catch(Exception e){
+                System.out.println("Exception is: "+e.getMessage());
+            }
+            if( num < min){
+                min = num;
+            }
+            currNode = currNode.next;
+        }
+        System.out.println("Min Element is: "+min);
+    }
 
     public void printList()
     {
@@ -136,5 +156,7 @@ public class SingleLinkedList {
         list.elementSearch("10");
         list.elementSearch("80");
         list.findMax();
+        list.findMin();
+        list.printList();
     }
 }
