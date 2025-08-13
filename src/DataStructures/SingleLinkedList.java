@@ -124,6 +124,42 @@ public class SingleLinkedList {
         }
         System.out.println("Min Element is: "+min);
     }
+    public void reverseList() {
+        if (head == null || head.next == null)
+        {
+            System.out.println("List is either empty or has only one node.");
+            printList();
+            return;
+        }
+
+        Node prev = null;
+        Node curr = head;
+        Node next = null;
+
+        while (curr != null) {
+            next = curr.next;   // store next node
+            curr.next = prev;   // reverse the link
+            prev = curr;        // move prev forward
+            curr = next;        // move curr forward
+        }
+
+        head = prev; // update head to the new front
+        System.out.println("Reversed List:");
+        printList();
+    }
+    Node reverseRecursive(Node current){
+        if (current == null || current.next == null) {
+            return current;
+        }
+        Node newhead = reverseRecursive(current.next);
+        current.next.next = current;
+        current.next = null;
+        return newhead;
+    }
+
+    void Reverse() {
+        head = reverseRecursive(head);
+    }
 
     public void printList()
     {
@@ -158,5 +194,7 @@ public class SingleLinkedList {
         list.findMax();
         list.findMin();
         list.printList();
+        list.reverseList();
+        list.Reverse();
     }
 }
